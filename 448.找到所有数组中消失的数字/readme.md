@@ -12,5 +12,5 @@
 我们将把 |nums[i]|-1 索引位置的元素标记为负数。即 nums[new_index] = -abs(nums[new_index])  
 然后遍历数组，若当前数组元素 nums[i] 为负数，说明我们在数组中存在数字 i+1。  
 注意要取绝对值，因为同一个数字可能出现两次  
-time:O(n)
+time:O(n)  
 space:O(1)
