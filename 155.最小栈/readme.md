@@ -12,5 +12,5 @@ getMin() —— 检索栈中的最小元素。
 每次将入栈元素和最小栈的栈顶比较，如果小于等于栈顶元素   
 除了入栈之外，还要入辅助栈    
 注意在访问stack[-1]时，要确定stack存在  
-time：O(1)  push.pop,top,min的操作都是O(1)
+time：O(1)  push.pop,top,min的操作都是O(1)   
 space:O(n)
