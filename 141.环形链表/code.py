@@ -5,13 +5,11 @@ class Solution(object):
         :rtype: bool
         """
         if not head:
-          return False
-        slow = head
-        fast = head.next
+            return False
+        slow, fast = head,head.next
         while slow != fast:
-            if fast and fast.next:
-                slow = slow.next
-                fast = fast.next.next
-            else:
+            if not fast or not fast.next:
                 return False
-        return True
+            slow = slow.next
+            fast = fast.next.next
+        return True 
